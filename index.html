@@ -10,15 +10,69 @@
     <script type="text/javascript">
         var money;
         money = 4000;
+        money = money - 3200; //200
 
         var name;
-        name = 'park';
-        name = name + ' sy';
+        name = 'Ko';
+        name = name + ' gw';
 
         var boolean = false;
-        boolan = true;
+        boolean = true;
 
-      document.getElementById('console').innerHTML = name;
+    /// complex
+    // array
+
+    // var a = new Array();
+    // a[0] = "dog";
+    // a[1] = "cat";
+
+    var a = ['dog', 'cat'];
+
+    // object
+    //var obj = new Object();
+    //obj.name = "Ko";
+    //obj.gender = "man";
+
+    var obj = {name: 'Ko', gender: 'man'};
+
+    // if 문
+    if (money > 1000 || obj.name == 'Koㅁ') {
+        alert('1000원 보다 큽니다.');
+    }  else if (money > 500) {
+      alert('1000원 보다 작거나 같고 500원 보다 큽니다. 또는 500원 보다 크거나 이름이 Ko가 아닙니다.')
+    }   else {
+      alert('500원 보다 작거나 같습니다.');
+    }
+
+    //switch 문
+    var name = prompt('이름을 입력해주세요.');
+    alert('안녕하세요. '+name+'님!');
+    var age = prompt('나이를 입력해주세요.');
+
+    if (age > 100) {
+        alert('아주 장수하시네요!');
+      } else if (age > 50;) {
+        alert('어르신!');
+      } else if (age > 40;) {
+        alert('40대');
+      } else if (age > 30;) {
+        alert('30대');
+      } else if (age > 20;) {
+        alert('20대');
+      } else if (age > 10;) {
+        alert('10대');
+      } else {
+        alert('유소년');
+      }
+
+
+  //
+
+
+
+    document.getElementById('console').innerHTML = obj.name + ":" + obj.gender;
+
+
     </script>
 
 
